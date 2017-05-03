@@ -2,6 +2,8 @@ package programmingExercices;
 
 import javax.swing.Action;
 
+import Node;
+
 /**
  * Classe pour l'arbre vide
  *

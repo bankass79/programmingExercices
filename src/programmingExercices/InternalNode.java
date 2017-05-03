@@ -2,6 +2,12 @@ package programmingExercices;
 
 import javax.swing.Action;
 
+import Node;
+
+/**
+ * @author amadou
+ *
+ */
 class InternalNode implements Node {
 	    /** Key */
 	    Comparable value;

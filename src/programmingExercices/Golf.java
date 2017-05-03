@@ -17,7 +17,7 @@ public class Golf {
 		
 		Player(Queue<Card> cardsToPlay) {
 			this.cardsToPlay = cardsToPlay;
-			this.cardsAtStake = new LinkedList<>();
+			this.cardsAtStake = new LinkedList<Card>();
 		}
 		
 		public boolean hasCardsToPlay() {

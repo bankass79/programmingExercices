@@ -1,6 +1,5 @@
 package programmingExercices;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -36,56 +35,25 @@ import java.util.Scanner;
  * 
  *
  */
-public class AsciiChart {
+public class LettreGrapphic {
+
 	
-	   static String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ?";
-
-
-	    public static void main(String args[]) {
-	    	
-	        Scanner in = new Scanner(System.in);
-	        int L = in.nextInt(); // Lageur d'une lettre repséentéé en ASCII
-	        int H = in.nextInt(); // La hauteur d'une lettre en art ASCII
-	      
-	      
-	        if (in.hasNextLine()) {
-	            in.nextLine();
-	        }
-	      
-	        String T = in.nextLine().toUpperCase(); // La ligne de texte composée de N caractères ASCII
-	        
-	        ArrayList <String> ascII= new ArrayList <String> ();
-	        
-	        for (int i = 0; i < H; i++) {
-	            String ROW = in.nextLine();
-	            ascII.add(ROW);
-	        }
-	    List<Integer> pos= new ArrayList<Integer> ();
-
-	   for(char c : T.toCharArray()) {
-				if(c < 'A' || c > 'Z') {
-					pos.add(26);
-				}
-				else {
-					for(char letter : alphabet.toCharArray()) {
-						if(c == letter) {
-						 pos.add(alphabet.indexOf(letter));
-						}
-					}
-				}
-			}
+	 //static String alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZ?";
+	
+	 public static void main(String[] args) {
+		
+		Scanner in= new Scanner(System.in);
+		String ascii= " ";
+		System.out.println("Saisissez le caractère à covertir");
+		
+		
+		ascii= in.nextLine();
+		
+		System.out.println(ascii.toCharArray());
+		
 			
-			//print result
-			for(int j = 0; j < H; j++) {
-				for(int k = 0; k < pos.size(); k++) {
-					System.out.print(ascII.get(j).substring(pos.get(k)*L, pos.get(k)*L + L));
-				}
-				System.out.println();
-			}
-			in.close();
-	        // Write an action using System.out.println()
-	        // To debug: System.err.println("Debug messages...");
+		}
+		
+	
 
-	      //  System.out.println("answer");
-	    }
 }

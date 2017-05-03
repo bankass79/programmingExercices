@@ -1,5 +1,6 @@
 package programmingExercices;
 
+
 //======================================================================
 //ALGORITHMES SUR LES GRAPHES
 //======================================================================
@@ -197,6 +198,10 @@ class File {
 		}
 		return t;
 	}
+	public void ajouter(Arbre arbre) {
+		//debut=ajouter(debut, arbre);
+		
+	}
 }
 //======================================================================
 //PANEL
@@ -294,7 +299,7 @@ class GraphPanel extends Panel implements Runnable {
 				n1.dy += dy / dlen;
 			}
 		}
-		Dimension d = size();
+		Dimension d =getMaximumSize();
 		for (int i = 0 ; i < nnodes ; i++) {
 			Node2 n = nodes[i];
 			if (!stable) {
@@ -381,7 +386,7 @@ class GraphPanel extends Panel implements Runnable {
 	}
 //----------------------------------------------------------------------
 	public synchronized void update(Graphics g) {
-		Dimension d = size();
+		Dimension d = getMaximumSize();
 		if ((offscreen == null) || (d.width != offscreensize.width) || (d.height != offscreensize.height)) {
 			offscreen = createImage(d.width, d.height);
 			offscreensize = d;
@@ -447,7 +452,7 @@ class GraphPanel extends Panel implements Runnable {
 	}
 //----------------------------------------------------------------------
 	public void stop() {
-		relaxer.stop();
+		relaxer.interrupt();
 	}
 }
 //======================================================================
@@ -485,7 +490,7 @@ public class Graph extends Applet {
 				panel.addEdge(str.substring(0,i), str.substring(i+1), len);
 			}
 		}
-		Dimension d = size();
+		Dimension d = getMaximumSize();
 		String center = getParameter("center");
 		if (center != null) {
 			Node2 n = panel.nodes[panel.findNode(center)];
@@ -505,7 +510,7 @@ public class Graph extends Applet {
 //----------------------------------------------------------------------
 	public void stop() {
 		panel.stop();
-		algo.stop();
+		algo.interrupt();;
 	}
 //----------------------------------------------------------------------
 	public boolean action(Event evt, Object arg) {

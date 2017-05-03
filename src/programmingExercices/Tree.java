@@ -1,5 +1,6 @@
 package programmingExercices;
 
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -7,6 +8,10 @@ import java.util.NoSuchElementException;
 import java.util.Stack;
 
 import javax.swing.Action;
+
+import Node;
+
+
 
 public class Tree {
 
