@@ -1,5 +1,5 @@
 package programmingExercices;
-import File;
+
 
 public class Arbre {
 	private int valeur;
@@ -191,7 +191,7 @@ public class Arbre {
 
 	/**
 	 * @param value
-	 *            la valeur a recherche dans l'arbre
+	 * la valeur a recherche dans l'arbre
 	 * @return un boolean indiquant si value a ete trouve ou non
 	 */
 	public boolean recherche(int value) {
@@ -209,7 +209,7 @@ public class Arbre {
 
 	/**
 	 * @param value
-	 *            la valeur a inserer dans l'arbre
+	 * la valeur a inserer dans l'arbre
 	 */
 	public void insertion(int value) {
 		if (value == getValeur()) {

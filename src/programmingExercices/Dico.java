@@ -1,7 +1,5 @@
 package programmingExercices;
 
-import Noeud;
-
 public class Dico
 {
     Noeud racine ;
