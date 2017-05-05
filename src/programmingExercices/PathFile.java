@@ -10,7 +10,7 @@ public class PathFile {
 
 
 	public static void main(String[] args) {
-		Path sPath = Paths.get("test1.txt");
+		Path sPath = Paths.get("soundex.txt");
 		Path dPath = Paths.get("test2.txt");
 		try {
 			Files.move(sPath, dPath, StandardCopyOption.ATOMIC_MOVE);
