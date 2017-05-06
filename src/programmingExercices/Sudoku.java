@@ -27,7 +27,12 @@ public class Sudoku {
 	}
 	
 	
-	// smeZone () permet de  vérifier si deux cases c1 et c2 appartiennent à la même colonne, la même ligne ou le même sous-groupe
+	/** sameZone () permet de  vérifier si deux cases c1 et c2 appartiennent à la même 
+	 * colonne, la même ligne ou le même sous-groupe 
+	 * @param c1
+	 * @param c2
+	 * @return
+	 */
 	boolean sameZone(int c1, int c2){
 		
 		return row (c1)== row(c2) || column(c1)==column(c2) || group(c1)==group(c2);
