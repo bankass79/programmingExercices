@@ -1,6 +1,24 @@
 package programmingExercices;
 
 public class ProblemeDesNReines {
+	
+	
+	/*static int countSolutionsRec(int a, int b, int c){
+		
+		if( a==0){
+			
+			return 1;
+		}
+		
+		int f=0, e= a & ~b & ~c;
+		
+		while (e!=0) {
+			int d=e & -e;
+			f+=countSolutionsRec(a-d,  (b+d)<<1, (c+d)>>1);
+			e-=d;
+		}
+		return f;
+	}*/
 
 
 	static boolean check( int [] cols, int r){
