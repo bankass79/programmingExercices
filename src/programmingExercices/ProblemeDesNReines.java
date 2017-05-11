@@ -53,7 +53,7 @@ public class ProblemeDesNReines {
 			return cols;
 		}else{
 
-			throw new Error("pas de solution  pour n+ n");
+			throw new Error("pas de solution  pour n"+n);
 		}
 
 
