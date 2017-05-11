@@ -1,6 +1,6 @@
 package programmingExercices;
 
-import Noeud;
+
 
 public class Dico2
 {

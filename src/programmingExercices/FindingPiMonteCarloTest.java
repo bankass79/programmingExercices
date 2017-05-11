@@ -6,13 +6,14 @@ import org.junit.Test;
 
 public class FindingPiMonteCarloTest {
 	
-	// FindingPiMonteCarlo  fpi= new FindingPiMonteCarlo();
+	 FindingPiMonteCarlo  fpi= new FindingPiMonteCarlo();
 	
+	 
 	 
 	 @Test
 	public void testCalculerPI() {
 		
-		  new FindingPiMonteCarlo().calculerPI(50000);
+	assertEquals("3.13512 ", new FindingPiMonteCarlo().calculerPI(50000));	  ;
 		
 		
 	}
