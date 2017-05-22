@@ -2,7 +2,7 @@ package programmingExercices;
 
 /**
  * @author amadou
- *
+ *  compute the sum of zero  to n number
  */
 public class Ex_01 {
 
