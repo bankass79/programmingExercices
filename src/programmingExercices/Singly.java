@@ -10,10 +10,10 @@ public class Singly {
 	
 	Singly next;
 	
-	public Singly(int e, Singly s) {
+	public Singly(int e) {
 		
 		e=elements;
-		s=next;
+		next=null;
 		
 	}
 	
@@ -32,6 +32,23 @@ public class Singly {
 		
 	}
 	return false;
+ }	
+ 
+ 
+ static int length(Singly s){
+	
+	 
+	 int len=0;
+	 
+	 for (; s != null; s=s.next) {
+		 
+		 len++;
+		
+	}
+	 
+	 return len;
+	 
+	 
  }
 
 }
